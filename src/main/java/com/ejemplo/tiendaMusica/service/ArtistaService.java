@@ -17,4 +17,9 @@ public class ArtistaService {
     {
         return artistaRepository.findAll();
     }
+
+    public Artista guardarArtista(Artista artista)
+    {
+        return artistaRepository.save(artista);
+    }
 }
